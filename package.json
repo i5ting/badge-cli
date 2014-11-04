@@ -15,5 +15,21 @@
   "bugs": {
     "url": "https://github.com/i5ting/badge-cli/issues"
   },
-  "homepage": "https://github.com/i5ting/badge-cli"
+  "homepage": "https://github.com/i5ting/badge-cli",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "gulp": "^3.8.10",
+    "gulp-istanbul": "^0.3.1",
+    "gulp-mocha": "^1.1.1",
+    "istanbul": "^0.3.2",
+    "mocha": "^2.0.1",
+    "sinon": "^1.11.1",
+    "supertest": "^0.14.0",
+    "supervisor": "^0.6.0",
+    "zombie": "^2.1.1"
+  },
+  "dependencies": {
+    "commander": "^2.5.0",
+		"request": "^2.47.0"
+  }
 }
