@@ -1,6 +1,6 @@
 {
   "name": "badge-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node-badge-cli ==============",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodeonly/node-badge-cli.git"
+    "url": "https://github.com/i5ting/badge-cli.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nodeonly/node-badge-cli/issues"
+    "url": "https://github.com/i5ting/badge-cli/issues"
   },
-  "homepage": "https://github.com/nodeonly/node-badge-cli"
+  "homepage": "https://github.com/i5ting/badge-cli"
 }
