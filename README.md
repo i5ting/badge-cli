@@ -60,6 +60,10 @@ badge -n badge-cli -f [md] -t [npm]
 [![npm version](https://badge.fury.io/js/q.svg)](http://badge.fury.io/js/q)
 ```
 
+具体长相
+
+[![npm version](https://badge.fury.io/js/q.svg)](http://badge.fury.io/js/q)
+
 主要是替换`q`对应的地方
 
 ## 技术
