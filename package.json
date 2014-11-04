@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm publish .",
-    "test": "gulp watch"
+    "test": " node bin/badge.js -t js -n q "
   },
   "preferGlobal": "true",
   "bin": {
@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "commander": "^2.5.0",
-		"request": "^2.47.0"
+    "handlebars": "^2.0.0",
+    "request": "^2.47.0"
   }
 }
