@@ -4,7 +4,7 @@ var Handlebars = require('handlebars');
 
 module.exports = function (module_name, type, format) {
 	var msg = {
-		markdown:Handlebars.compile("[![npm version](https://badge.fury.io/{{type}}/{{name}}.svg)](http://badge.fury.io/{{type}}/{{name}})")
+		markdown: Handlebars.compile("[![npm version](https://badge.fury.io/{{type}}/{{name}}.svg)](http://badge.fury.io/{{type}}/{{name}})")
 	}
 	var url = 'http://badge.fury.io/'+ type +'/' + module_name + '.json';
 	request(url, function (error, response, body) {

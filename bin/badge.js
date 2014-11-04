@@ -4,7 +4,9 @@
  * Module dependencies.
  */
 function isDefined(x) { return x !== null && x !== undefined; } 
-
+Array.prototype.contain = function(obj) {
+  return this.indexOf(obj) !== -1;
+}
 
 var program = require('commander');
 
@@ -28,14 +30,20 @@ var format = "markdown";
 var type = "npm";
 
 
-if(program.format){
+if (program.format) {
 	format = program.format;
 }
 
-if(program.type){
+if (program.type) {
 	type = program.type;
 }
 
+var FORMATS = ['url', 'markdown', 'html', 'textile', 'rdoc', 'asciidoc', 'rst']
+
+if (FORMATS.contain(format) == false) {
+	console.log('-f 可选值：url, markdown（默认值）, html, textile, rdoc, asciidoc, rst');
+	return;
+}
 
 console.log('format = ' + format);
 console.log('type = ' + type);
