@@ -3,6 +3,8 @@ node-badge-cli
 
 a cli tools for get result form http://badge.fury.io/for/js generated content
 
+[![npm version](https://badge.fury.io/js/badge-cli.svg)](http://badge.fury.io/js/badge-cli)
+
 ## Install 
 
 ```
