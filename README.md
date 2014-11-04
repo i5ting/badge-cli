@@ -65,4 +65,5 @@ badge badge-cli -f md -t npm
 ## 技术
 
 - https://github.com/tj/commander.js(命令行)
+- https://github.com/request/request
 - https://github.com/mochajs/mocha(测试)
