@@ -11,7 +11,7 @@ Array.prototype.contain = function(obj) {
 var program = require('commander');
 
 program
-  .version('1.0.1')
+  .version('1.0.2')
 	.usage(" badge -n badge-cli -f [md] -t [npm] ")
 	.option('-n, --name [name]', 'npm name,for example: q')
   .option('-f, --format [format]', '可选值：url, markdown（默认值）, html, textile, rdoc, asciidoc, rst')
