@@ -6,13 +6,13 @@ a cli tools for get result form http://badge.fury.io/for/js generated content
 ## Install 
 
 ```
-npm install badge-cli
+npm install -g badge-cli
 ```
 
 ## Usage 
 
 ```
-badge badge-cli -f md -t npm
+badge -n badge-cli -f [md] -t [npm] 
 ```
 
 
