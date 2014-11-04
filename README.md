@@ -19,25 +19,25 @@ badge badge-cli -f md -t npm
 `-t`可选项
 
 - npm（默认值）
-- Ruby    
-- Python    
-- Bower    
-- GitHub    
-- NuGet    
-- PHP    
-- CocoaPods    
-- Perl  
+- ruby    
+- python    
+- bower    
+- github    
+- nuget    
+- php    
+- cocoapods    
+- perl  
 
 
 `-f`可选项
 
-- URL
-- Markdown（默认值）
-- HTML
-- Textile
-- RDOC
-- AsciiDoc
-- RST
+- url
+- markdown（默认值）
+- html
+- textile
+- rdoc
+- asciidoc
+- rst
  
 ## 实现流程
 
