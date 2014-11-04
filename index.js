@@ -2,14 +2,13 @@ var request = require('request');
 var Handlebars = require('handlebars');
 
 var msg = {
-	url: Handlebars.compile("https://badge.fury.io/{{type}}/{{name}}.svg"),
+	url: 			Handlebars.compile("https://badge.fury.io/{{type}}/{{name}}.svg"),
 	markdown: Handlebars.compile("[![npm version](https://badge.fury.io/{{type}}/{{name}}.svg)](http://badge.fury.io/{{type}}/{{name}})"),
-	html:Handlebars.compile("<a href='http://badge.fury.io/{{type}}/{{name}}'><img src='https://badge.fury.io/{{type}}/{{name}}.svg' alt='npm version' height='18'></a>"),
-	textile:Handlebars.compile("!https://badge.fury.io/{{type}}/{{name}}.svg!:http://badge.fury.io/{{type}}/{{name}}"),
-	rdoc:Handlebars.compile("{<img src='https://badge.fury.io/{{type}}/{{name}}.svg' alt='npm version' />}[http://badge.fury.io/{{type}}/{{name}}]"),
-	asciidoc:handlebars.compile("image:https://badge.fury.io/{{type}}/{{name}}.svg['npm version', link='http://badge.fury.io/{{type}}/{{name}}']"),
-	rst:handlebars.compile(".. image:: https://badge.fury.io/{{type}}/{{name}}.svg
-    :target: http://badge.fury.io/{{type}}/{{name}}")
+	html: 		Handlebars.compile("<a href='http://badge.fury.io/{{type}}/{{name}}'><img src='https://badge.fury.io/{{type}}/{{name}}.svg' alt='npm version' height='18'></a>"),
+	textile: 	Handlebars.compile("!https://badge.fury.io/{{type}}/{{name}}.svg!:http://badge.fury.io/{{type}}/{{name}}"),
+	rdoc: 		Handlebars.compile("{<img src='https://badge.fury.io/{{type}}/{{name}}.svg' alt='npm version' />}[http://badge.fury.io/{{type}}/{{name}}]"),
+	asciidoc: Handlebars.compile("image:https://badge.fury.io/{{type}}/{{name}}.svg['npm version', link='http://badge.fury.io/{{type}}/{{name}}']"),
+	rst:   		Handlebars.compile(".. image:: https://badge.fury.io/{{type}}/{{name}}.svg \n :target: http://badge.fury.io/{{type}}/{{name}}")
 }
 
 
