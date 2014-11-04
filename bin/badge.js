@@ -16,6 +16,7 @@ program
 	.option('-n, --name [name]', 'npm name,for example: q')
   .option('-f, --format [format]', '可选值：url, markdown（默认值）, html, textile, rdoc, asciidoc, rst')
   .option('-t, --type [type]', '可选值：npm（默认值）, ruby    , python    , bower    , github    , nuget    , php    , cocoapods    , perl  ')
+	.option('-v, --verbose', '打印详细日志')
   .parse(process.argv);
 
 var module_name = '';
@@ -27,8 +28,7 @@ if(isDefined(program.name) == true && typeof program.name == 'string' ){
 }
 
 var format = "markdown";
-var type = "npm";
-
+var type = "js";
 
 if (program.format) {
 	format = program.format;
@@ -38,6 +38,11 @@ if (program.type) {
 	type = program.type;
 }
 
+var verbose = false;
+if (program.verbose) {
+	verbose = program.verbose;
+}
+
 var FORMATS = ['url', 'markdown', 'html', 'textile', 'rdoc', 'asciidoc', 'rst']
 
 if (FORMATS.contain(format) == false) {
@@ -45,10 +50,17 @@ if (FORMATS.contain(format) == false) {
 	return;
 }
 
-console.log('format = ' + format);
-console.log('type = ' + type);
-console.log('name = ' + module_name);
+var _verbose = verbose;
+function log(str){
+	if(_verbose == true){
+		console.log(str);
+	}
+}
 
-var badge = require('../index');
+log('format = ' + format);
+log('type = ' + type);
+log('name = ' + module_name);
+log('verbose = ' + verbose);
 
-badge(module_name, type, format);
+// main 
+require('../index')(module_name, type, format, verbose);
