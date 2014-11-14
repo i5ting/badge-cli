@@ -2,6 +2,7 @@
   "name": "badge-cli",
   "version": "1.0.4",
   "description": "node-badge-cli ==============",
+	"keywords": ["badge", "cli", "badge-cli", "utils"],
   "main": "index.js",
   "scripts": {
     "start": "npm publish .",
