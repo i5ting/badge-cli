@@ -104,11 +104,13 @@ Is this ok? (yes)
 ### 修改package.json
 
 #### 命令配置（至关重要）
- 
+
+```
   "preferGlobal": "true",
   "bin": {
     "badge": "bin/badge.js"
   },
+```
 
 此处是关键
 
@@ -119,6 +121,7 @@ Is this ok? (yes)
 
 #### 依赖
 
+```
   "devDependencies": {
     "chai": "^1.9.2",
     "gulp": "^3.8.10",
@@ -137,6 +140,7 @@ Is this ok? (yes)
     "handlebars": "^2.0.0",
     "request": "^2.47.0"
   },
+```
 
 ----------
 当前npm依赖dependencies
@@ -160,13 +164,16 @@ Is this ok? (yes)
 如果这些不够的话
 
 	npm install --save-dev xxx
+	
 #### scripts
 
+```
   "scripts": {
     "start": "npm publish .",
     "test": " node bin/badge.js -t js -n q "
   },
-	
+```
+
 这里定义了2个命令
 
 - `npm start`
