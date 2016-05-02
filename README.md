@@ -5,6 +5,11 @@ a cli tools for get result form http://badge.fury.io/for/js generated content
 
 [![npm version](https://badge.fury.io/js/badge-cli.svg)](http://badge.fury.io/js/badge-cli)
 
+
+实现命令行
+
+- badge node启动端口，选择，然后自动替换
+
 ## Install 
 
 ```
